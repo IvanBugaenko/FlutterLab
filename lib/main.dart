@@ -107,6 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Text(
               'You have pushed the button this many times:',
+              style: TextStyle(fontFamily: 'SF_Pro_Display', fontWeight: FontWeight.w700)
             ),
             Text(
               '$_counter',
