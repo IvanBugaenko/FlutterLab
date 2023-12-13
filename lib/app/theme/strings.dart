@@ -17,8 +17,8 @@ class Strings {
   static const tariffsAndLimitsHeader = "Тарифы и лимиты";
   static const tariffsAndLimitsDescription = "Для операций в Сбербанк Онлайн";
 
-  static const editLimitHeader = "Изменить суточный лимит";
-  static const editLimitDescription = "На платежи и переводы";
+  static const limitHeader = "Изменить суточный лимит";
+  static const limitDescription = "На платежи и переводы";
   static const transfersWithoutHeader = "Переводы без комиссии";
   static const transfersWithoutDescription =
       "Показать остаток в этом месяце";
