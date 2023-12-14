@@ -1,5 +1,6 @@
 class Strings {
   static const userName = "Екатерина";
+
   static const profile = "Профиль";
   static const settings = "Настройки";
 
@@ -20,8 +21,7 @@ class Strings {
   static const limitHeader = "Изменить суточный лимит";
   static const limitDescription = "На платежи и переводы";
   static const transfersWithoutHeader = "Переводы без комиссии";
-  static const transfersWithoutDescription =
-      "Показать остаток в этом месяце";
+  static const transfersWithoutDescription = "Показать остаток в этом месяце";
   static const infoHeader = "Информация о тарифах и лимитах";
 
   static const interestsHeader = "Интересы";

@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:sber/app/models/header_and_description.dart';
 import 'package:sber/app/models/tariffs_and_limits.dart';
 import 'package:sber/app/theme/images.dart';
@@ -26,4 +27,12 @@ final tariffsAndLimitsInfo = [
   TariffsAndLimits(
       image: Images.infoIcon,
       info: HeaderAndDescription(header: Strings.infoHeader)),
+];
+
+final tabList = [
+  Strings.profile, Strings.settings
+];
+
+final List<Widget> tabContent = [
+
 ];
