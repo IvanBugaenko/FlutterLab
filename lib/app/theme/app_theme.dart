@@ -55,10 +55,10 @@ final sberChipTheme = ChipThemeData(
 
 final sberElevatedButtonTheme = ElevatedButtonThemeData(
   style: ElevatedButton.styleFrom(
-      backgroundColor: AppColors.primary,
-      foregroundColor: AppColors.activeElement,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
-      elevation: 4),
+    backgroundColor: AppColors.primary,
+    foregroundColor: AppColors.activeElement,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(12),
+    ),
+  ),
 );

@@ -16,4 +16,7 @@ class AppColors {
   static const tertiary = Color(0xFF08A652); // цвет иконок на верхней панели
   static const Color activeElement =
       Color(0xFF068441); // цвет активного таба/чипа
+
+  static const Color enableCardShadowSmall = Color.fromARGB(19, 29, 29, 29);
+  static const Color enableCardShadowLarge = Color.fromARGB(17, 85, 85, 116);
 }

@@ -18,11 +18,19 @@ class ProfileTabContentWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 16, top: 30),
+      padding: const EdgeInsets.only(top: 30),
       child: ListView(physics: const NeverScrollableScrollPhysics(), children: [
         ProfileBlockWidget(
             headerAndDescription: _enabledText,
-            widget: EnabledServicesWidget(enabledServices: enabledServices))
+            widget: EnabledServicesWidget(enabledServices: enabledServices)),
+        const SizedBox(height: 46),
+        ProfileBlockWidget(
+            headerAndDescription: _enabledText,
+            widget: EnabledServicesWidget(enabledServices: enabledServices)),
+        const SizedBox(height: 46),
+        ProfileBlockWidget(
+            headerAndDescription: _enabledText,
+            widget: EnabledServicesWidget(enabledServices: enabledServices)),
       ]),
     );
   }

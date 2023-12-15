@@ -1,56 +1,76 @@
 import 'package:flutter/material.dart';
 import 'package:sber/app/models/enabled_service.dart';
+import 'package:sber/app/theme/colors.dart';
 
 class EnabledServiceCardWidget extends StatelessWidget {
-  final EnabledService enabledService;
-
   const EnabledServiceCardWidget({super.key, required this.enabledService});
+
+  final EnabledService enabledService;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.only(right: 8),
-        child: ElevatedButton(
-            onPressed: () => {},
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(height: 16),
-                Row(
-                  children: [
-                    Image.asset(enabledService.image, width: 36, height: 36),
-                    const SizedBox(width: 13),
-                    Text(enabledService.serviceName,
-                        style: Theme.of(context).textTheme.titleSmall)
+    return SizedBox(
+        width: 236,
+        child: Padding(
+            padding: const EdgeInsets.only(right: 8),
+            child: DecoratedBox(
+                decoration: const BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.enableCardShadowLarge,
+                      blurRadius: 14,
+                      offset: Offset(0, 8),
+                      spreadRadius: 0,
+                    ),
+                    BoxShadow(
+                      color: AppColors.enableCardShadowSmall,
+                      blurRadius: 10,
+                      offset: Offset(0, 2),
+                      spreadRadius: 0,
+                    )
                   ],
                 ),
-                const SizedBox(height: 24, width: 180),
-                // Expanded(child: Container()),
-                Text(enabledService.info.header,
-                    style: Theme.of(context).textTheme.bodyMedium),
-                Text(enabledService.info.description,
-                    style: Theme.of(context).textTheme.bodySmall),
-                const SizedBox(height: 16),
-              ],
-            )));
+                child: ElevatedButton(
+                    onPressed: () => {},
+                    child: Padding(
+                        padding: const EdgeInsets.only(top: 16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Image.asset(enabledService.image,
+                                    width: 36, height: 36),
+                                const SizedBox(width: 13),
+                                Text(enabledService.serviceName,
+                                    style:
+                                        Theme.of(context).textTheme.titleSmall)
+                              ],
+                            ),
+                            const SizedBox(height: 24),
+                            Text(enabledService.info.header,
+                                style: Theme.of(context).textTheme.bodyMedium),
+                            Text(enabledService.info.description,
+                                style: Theme.of(context).textTheme.bodySmall),
+                          ],
+                        ))))));
   }
 }
 
 class EnabledServicesWidget extends StatelessWidget {
-  final List<EnabledService> enabledServices;
-
   const EnabledServicesWidget({super.key, required this.enabledServices});
+
+  final List<EnabledService> enabledServices;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
         padding: const EdgeInsets.only(top: 20),
         child: SizedBox(
-            width: double.infinity,
-            height: 151,
+            height: 140,
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                padding: const EdgeInsets.only(bottom: 10, right: 10),
+                padding: const EdgeInsets.only(bottom: 10, right: 10, left: 16),
                 itemCount: enabledServices.length,
                 itemBuilder: (ctx, index) {
                   return EnabledServiceCardWidget(
