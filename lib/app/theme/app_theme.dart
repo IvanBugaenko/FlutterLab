@@ -4,13 +4,13 @@ import 'package:sber/app/theme/text_styles.dart';
 
 class AppTheme {
   static final themeData = ThemeData(
-    useMaterial3: true,
-    textTheme: sberTextTheme,
-    colorScheme: sberColorScheme,
-    tabBarTheme: sberTabBarTheme,
-    chipTheme: sberChipTheme,
-    dividerColor: AppColors.outlineVariant,
-  );
+      useMaterial3: true,
+      textTheme: sberTextTheme,
+      colorScheme: sberColorScheme,
+      tabBarTheme: sberTabBarTheme,
+      chipTheme: sberChipTheme,
+      dividerColor: AppColors.outlineVariant,
+      elevatedButtonTheme: sberElevatedButtonTheme);
 }
 
 final sberTextTheme = TextTheme(
@@ -39,8 +39,8 @@ final sberTabBarTheme = TabBarTheme(
     borderSide: BorderSide(color: AppColors.activeElement, width: 2),
   ),
   labelColor: Colors.black,
-  labelStyle: sberTextTheme.bodyMedium,
-  unselectedLabelStyle: sberTextTheme.bodyMedium,
+  labelStyle: sberTextTheme.titleSmall,
+  unselectedLabelStyle: sberTextTheme.bodyLarge,
 );
 
 final sberChipTheme = ChipThemeData(
@@ -51,4 +51,14 @@ final sberChipTheme = ChipThemeData(
   ),
   side: BorderSide.none,
   selectedColor: AppColors.activeElement,
+);
+
+final sberElevatedButtonTheme = ElevatedButtonThemeData(
+  style: ElevatedButton.styleFrom(
+      backgroundColor: AppColors.primary,
+      foregroundColor: AppColors.activeElement,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
+      elevation: 4),
 );

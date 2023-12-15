@@ -6,11 +6,11 @@ class Strings {
 
   static const enabledHeader = "У вас подключено";
   static const enabledDescription =
-      "Подписки, автоплатежи и сервисы, на которые вы подписаны";
+      "Подписки, автоплатежи и сервисы, на которые вы подписались";
 
   static const sberPrimeHeader = "СберПрайм";
   static const sberPrimePaymentDateInfo = "Платеж 9 июля";
-  static const cost = "199 рублей в месяц";
+  static const cost = "199 ₽ в месяц";
 
   static const transfersHeader = "Переводы";
   static const transfersPaymentDateInfo = "Автопродление 21 августа";

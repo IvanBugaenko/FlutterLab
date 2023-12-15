@@ -1,6 +1,6 @@
 class HeaderAndDescription {
   final String header;
-  final String? description;
+  final String description;
 
-  HeaderAndDescription({required this.header, this.description});
+  HeaderAndDescription({required this.header, required this.description});
 }

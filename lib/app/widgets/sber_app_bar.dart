@@ -18,9 +18,10 @@ class SberAppBar extends StatelessWidget {
     return SliverAppBar(
       backgroundColor: Theme.of(context).colorScheme.primary,
       pinned: true,
-      snap: true,
+      snap: false,
       shadowColor: AppColors.onSurfaceShadow,
       floating: true,
+      elevation: 4,
       expandedHeight: 270,
       actions: [
         IconButton(

@@ -11,41 +11,42 @@ class TextStyles {
       fontFamily: SFProFont.d,
       fontWeight: FontWeight.w700,
       fontSize: 24,
-      color: AppColors.onPrimary);
+      color: AppColors.onPrimary,
+      // letterSpacing: -0.7
+      );
 
   static const titleMedium = TextStyle(
       fontFamily: SFProFont.t,
       fontWeight: FontWeight.w700,
       fontSize: 20,
-      color: AppColors.onPrimary);
+      color: AppColors.onPrimary,
+      letterSpacing: -0.7);
 
   static const titleSmall = TextStyle(
       fontFamily: SFProFont.t,
       fontWeight: FontWeight.w500,
       fontSize: 16,
-      color: AppColors.onPrimary);
-
-  static const titleVerySmall = TextStyle(
-      fontFamily: SFProFont.t,
-      fontWeight: FontWeight.w500,
-      fontSize: 14,
-      color: AppColors.onPrimary);
+      color: AppColors.onPrimary,
+      letterSpacing: -0.4);
 
   static final bodyLarge = TextStyle(
       fontFamily: SFProFont.t,
       fontWeight: FontWeight.w500,
-      fontSize: 20,
-      color: AppColors.secondary);
+      fontSize: 16,
+      color: AppColors.secondary,
+      letterSpacing: -0.4);
 
-  static final bodyMedium = TextStyle(
+  static const bodyMedium = TextStyle(
       fontFamily: SFProFont.t,
       fontWeight: FontWeight.w500,
-      fontSize: 16,
-      color: AppColors.secondary);
+      fontSize: 14,
+      color: AppColors.onPrimary,
+      letterSpacing: -0.4);
 
   static final bodySmall = TextStyle(
       fontFamily: SFProFont.t,
       fontWeight: FontWeight.w500,
       fontSize: 14,
-      color: AppColors.secondary);
+      color: AppColors.secondary,
+      letterSpacing: -0.4);
 }
