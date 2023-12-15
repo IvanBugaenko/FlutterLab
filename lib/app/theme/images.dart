@@ -6,4 +6,5 @@ class Images {
   static const transfersWithoutIcon =
       "assets/images/transfers_without_icon.png";
   static const userPhotoImage = "assets/images/user_photo.png";
+  static const arrow = "assets/images/arrow_icon.png";
 }

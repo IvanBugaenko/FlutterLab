@@ -45,7 +45,7 @@ final sberTabBarTheme = TabBarTheme(
 
 final sberChipTheme = ChipThemeData(
   labelPadding: const EdgeInsets.symmetric(horizontal: 4),
-  // backgroundColor: const Color.fromRGBO(0, 0, 0, 0.08),
+  backgroundColor: AppColors.outlineVariant,
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(16),
   ),

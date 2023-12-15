@@ -28,6 +28,7 @@ flutter:
     - assets/images/transfers_icon.png
     - assets/images/transfers_without_icon.png
     - assets/images/user_photo.png
+    - assets/images/arrow_icon.png
 
   fonts:
     - family: SF_Pro_Display
