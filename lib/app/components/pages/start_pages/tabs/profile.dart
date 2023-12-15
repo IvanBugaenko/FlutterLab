@@ -47,15 +47,12 @@ class ProfileTabContentWidget extends StatelessWidget {
         ProfileBlockWidget(
             headerAndDescription: _enabledText,
             widget: EnabledServicesWidget(enabledServices: enabledServices)),
-
         const SizedBox(height: 46),
-
         ProfileBlockWidget(
             headerAndDescription: _tariffsAndLimitsText,
-            widget: TariffsAndLimitsWidget(tariffsAndLimitsList: _tariffsAndLimitsList)),
-
+            widget: TariffsAndLimitsWidget(
+                tariffsAndLimitsList: _tariffsAndLimitsList)),
         const SizedBox(height: 46),
-
         ProfileBlockWidget(
             headerAndDescription: _interestsText,
             widget: InterestsWidget(interestsList: interestsList)),

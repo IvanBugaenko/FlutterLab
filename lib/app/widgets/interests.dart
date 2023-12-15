@@ -25,14 +25,15 @@ class _InterestChipWidgetState extends State<InterestChipWidget> {
 
   void _selectChip() {
     setState(() {
-      _isSelected = _isSelected ? false: true;
+      _isSelected = _isSelected ? false : true;
     });
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return FilterChip(
-      label: Text(widget.interestName, style: Theme.of(context).textTheme.bodyMedium), 
+      label: Text(widget.interestName,
+          style: Theme.of(context).textTheme.bodyMedium),
       onSelected: (bool s) {
         _selectChip();
       },
@@ -49,13 +50,9 @@ class InterestsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 16, right: 16, top: 8),
-      child: Wrap(
-        spacing: 8,
-        children: [
+        padding: EdgeInsets.only(left: 16, right: 16, top: 8),
+        child: Wrap(spacing: 8, children: [
           for (var name in interestsList) InterestChipWidget(interestName: name)
-        ]
-      )
-    );
+        ]));
   }
 }

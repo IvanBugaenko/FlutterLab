@@ -6,8 +6,9 @@ class ProfileBlockWidget extends StatelessWidget {
   final HeaderAndDescription headerAndDescription;
   final Widget widget;
 
-  const ProfileBlockWidget({super.key, required this.headerAndDescription, required this.widget});
-  
+  const ProfileBlockWidget(
+      {super.key, required this.headerAndDescription, required this.widget});
+
   @override
   Widget build(BuildContext context) {
     return Column(

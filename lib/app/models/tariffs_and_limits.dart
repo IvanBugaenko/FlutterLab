@@ -3,5 +3,6 @@ class TariffsAndLimits {
   final String header;
   final String? description;
 
-  TariffsAndLimits({required this.image, required this.header, this.description});
+  TariffsAndLimits(
+      {required this.image, required this.header, this.description});
 }

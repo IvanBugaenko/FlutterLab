@@ -8,12 +8,12 @@ class SFProFont {
 
 class TextStyles {
   static const titleLarge = TextStyle(
-      fontFamily: SFProFont.d,
-      fontWeight: FontWeight.w700,
-      fontSize: 24,
-      color: AppColors.onPrimary,
-      // letterSpacing: -0.7
-      );
+    fontFamily: SFProFont.d,
+    fontWeight: FontWeight.w700,
+    fontSize: 24,
+    color: AppColors.onPrimary,
+    // letterSpacing: -0.7
+  );
 
   static const titleMedium = TextStyle(
       fontFamily: SFProFont.t,

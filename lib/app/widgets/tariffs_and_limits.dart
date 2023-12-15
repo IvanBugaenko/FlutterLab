@@ -60,10 +60,7 @@ class TariffsAndLimitsWidget extends StatelessWidget {
                 tariffsAndLimits: tariffsAndLimitsList[index]);
           },
           separatorBuilder: (context, index) {
-            return Divider(
-              indent: 64,
-              color: Theme.of(context).dividerColor
-            );
+            return Divider(indent: 64, color: Theme.of(context).dividerColor);
           },
         ));
   }
